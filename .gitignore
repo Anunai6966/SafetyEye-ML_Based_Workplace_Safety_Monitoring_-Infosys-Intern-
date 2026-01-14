@@ -201,6 +201,11 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# ML / CV generated files
+logs/
+runs/
+temp_video.mp4
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
