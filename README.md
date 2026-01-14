@@ -135,8 +135,7 @@ python -m venv venv
 
 ### Activate the environment
 venv\Scripts\activate        # Windows
-
-### source venv/bin/activate   # Linux / macOS
+source venv/bin/activate   # Linux / macOS
 
 ### Install dependencies
 pip install -r requirements.txt
@@ -144,9 +143,13 @@ pip install -r requirements.txt
 ### Run the application
 streamlit run app.py
 
+---
+
 ## Conclusion
 
 SafetyEye demonstrates the practical application of machine learning and computer vision to solve a real-world workplace safety problem by converting raw video data into actionable compliance insights through automated detection, logging, and analytics.
+
+---
 
 ## Internship Note
 
