@@ -85,25 +85,25 @@ These analytics help stakeholders understand safety performance and identify rec
 
 ``` text
 SafetyEye/
-├── core/ # Core ML & business logic
-│ ├── detector.py # YOLO inference wrapper
-│ ├── rules.py # PPE violation logic
-│ ├── storage.py # Centralized logging system
-│ ├── emailer.py # Email alert utility
-│ ├── utils.py # Helper & drawing functions
-│ └── inference.py # Inference flow control
+├── core/                    # Core ML & business logic
+│ ├── detector.py            # YOLO inference wrapper
+│ ├── rules.py               # PPE violation logic
+│ ├── storage.py             # Centralized logging system
+│ ├── emailer.py             # Email alert utility
+│ ├── utils.py               # Helper & drawing functions
+│ └── inference.py           # Inference flow control
 │
-├── pages/ # Streamlit dashboard pages
+├── pages/                   # Streamlit dashboard pages
 │ ├── alerts.py
 │ ├── analytics.py
 │ └── init.py
 │
 ├── models/
-│ └── best.pt # Trained YOLO model weights
+│ └── best.pt                # Trained YOLO model weights
 │
-├── app.py # Application entry point
-├── ppe_data.yaml # Dataset configuration
-├── requirements.txt # Dependencies
+├── app.py                   # Application entry point
+├── ppe_data.yaml            # Dataset configuration
+├── requirements.txt         # Dependencies
 ├── README.md
 └── .gitignore
 ```
@@ -130,23 +130,24 @@ SafetyEye/
 
 ## How to Run the Project
 
-# Create a virtual environment
+### Create a virtual environment
 python -m venv venv
 
-# Activate the environment
+### Activate the environment
 venv\Scripts\activate        # Windows
-# source venv/bin/activate   # Linux / macOS
 
-# Install dependencies
+### source venv/bin/activate   # Linux / macOS
+
+### Install dependencies
 pip install -r requirements.txt
 
-# Run the application
+### Run the application
 streamlit run app.py
 
-# Conclusion
+## Conclusion
 
 SafetyEye demonstrates the practical application of machine learning and computer vision to solve a real-world workplace safety problem by converting raw video data into actionable compliance insights through automated detection, logging, and analytics.
 
-# Internship Note
+## Internship Note
 
 This project was developed as part of an Infosys Internship for learning and demonstration purposes.
